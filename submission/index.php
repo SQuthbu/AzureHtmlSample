@@ -3,7 +3,7 @@
  <Title>Registration Form</Title>
 
  <link rel="stylesheet" href="http://sqpwebapp.azurewebsites.net/submission/index.css">
-
+ <link rel="stylesheet" href="http://sqpwebapp.azurewebsites.net/submission/main.css">
  </head>
  <body> 
   <div class="user">
