@@ -21,9 +21,9 @@
         <div class="form__group">
             <input type="text" placeholder="Job" class="form__input" name="job" id="job"/>
         </div>
-        
+     
 
-       <input type="button" name="submit" value="Submit"  class="btn"/>      
+       <input type="submit" name="submit" value="Submit"  class="btn"/>      
        <input type="submit" class="btn" name="load_data" value="Load Data" />
       
  </form>
