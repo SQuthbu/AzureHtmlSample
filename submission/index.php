@@ -15,7 +15,8 @@
  	td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
  </style> -->
 <style>
-    <?php include 'index.css'; ?>
+ <link rel="stylesheet" type="text/css" href="style-ku.css">
+ 
 </style>
   
  </head>
