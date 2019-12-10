@@ -1,11 +1,9 @@
 <html>
  <head>
  <Title>Registration Form</Title>
-<style>
+
  <link rel="stylesheet" type="text/css" href="submission/index.css">
- 
-</style>
-  
+
  </head>
  <body> 
   <div class="user">
