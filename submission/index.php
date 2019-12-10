@@ -2,7 +2,7 @@
  <head>
  <Title>Registration Form</Title>
 
- <link rel="stylesheet" type="text/css" href="http://sqpwebapp.azurewebsites.net/submission/index.css">
+ <link rel="stylesheet" href="http://sqpwebapp.azurewebsites.net/submission/index.css">
 
  </head>
  <body> 
