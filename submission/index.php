@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-#pendaftar td, #customers th {
+#pendaftar td, #pendaftar th {
   border: 1px solid #ddd;
   padding: 8px;
 }
@@ -50,6 +50,7 @@
        <input type="submit" class="btn" name="load_data" value="Load Data" />
       
  </form>
+   <br>
  <?php
     $host = "sqpappserver.database.windows.net";
     $user = "squthbu";
