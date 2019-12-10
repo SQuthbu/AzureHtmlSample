@@ -2,7 +2,7 @@
  <head>
  <Title>Registration Form</Title>
 <style>
- <link rel="stylesheet" type="text/css" href="style-ku.css">
+ <link rel="stylesheet" type="text/css" href="index.css">
  
 </style>
   
