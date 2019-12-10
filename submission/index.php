@@ -64,18 +64,46 @@
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
                 echo "<h2>People who are registered:</h2>";
-                echo "<table>";
-                echo "<tr><th>Name</th>";
-                echo "<th>Email</th>";
-                echo "<th>Job</th>";
-                echo "<th>Date</th></tr>";
+                echo "<div class="wrap-table100">";
+                echo"<div class="table">";
+                    echo"<div class="row header">";
+						echo"<div class="cell">";
+							echo"Name";
+						echo"</div>";
+						echo"<div class="cell">";
+							echo"Email";
+                        echo"</div>";
+                        echo"<div class="cell">";
+							echo"Job";
+                        echo"</div>";
+                        echo"<div class="cell">";
+							echo"Date";
+						echo"</div>";
+                    echo"</div>";                    
+                
                 foreach($registrants as $registrant) {
-                    echo "<tr><td>".$registrant['name']."</td>";
-                    echo "<td>".$registrant['email']."</td>";
-                    echo "<td>".$registrant['job']."</td>";
-                    echo "<td>".$registrant['date']."</td></tr>";
+                    echo"<div class="row">";
+						echo"<div class="cell" data-title="Name">";
+                            echo $registrant['name'];
+						echo"</div>";
+						echo"<div class="cell" data-title="Email">";
+                            echo $registrant['email'];
+						echo"</div>";
+						echo"<div class="cell" data-title="Job">";
+                            echo $registrant['job'];
+						echo"</div>";
+						echo"<div class="cell" data-title="Location">";
+                            echo $registrant['date'];
+						echo"</div>";
+					echo"</div>";
+
+                    
+                    
+                    
+                   
                 }
-                echo "</table>";
+                echo "</div>";
+                echo "</div>";
             } else {
                 echo "<h3>No one is currently registered.</h3>";
             }
