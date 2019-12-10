@@ -2,12 +2,17 @@
  <head>
  <Title>Registration Form</Title>
 <style>
- <link rel="stylesheet" type="text/css" href="index.css">
+ <link rel="stylesheet" type="text/css" href="submission/index.css">
  
 </style>
   
  </head>
  <body> 
+  <div class="user">
+    <header class="user__header">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
+        <h1 class="user__title">Register here!</h1>
+    </header>
  <form method="post" action="index.php" enctype="multipart/form-data" class="form">
         <div class="form__group">
             <input type="text" placeholder="Name" class="form__input" name="name" id="name"/>
