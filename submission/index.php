@@ -3,7 +3,30 @@
  <Title>Registration Form</Title>
 
  <link rel="stylesheet" href="http://sqpwebapp.azurewebsites.net/submission/index.css">
- <link rel="stylesheet" href="http://sqpwebapp.azurewebsites.net/submission/main.css">
+ <style>
+#pendaftar {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#pendaftar td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#pendaftar tr:nth-child(even){background-color: #f2f2f2;}
+
+#pendaftar tr:hover {background-color: #ddd;}
+
+#pendaftar th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
  </head>
  <body> 
   <div class="user">
@@ -64,7 +87,7 @@
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
                 echo "<h2>People who are registered:</h2>";
-                echo "<table>";
+                echo "<table id='pendaftra'>";
                 echo "<tr><th>Name</th>";
                 echo "<th>Email</th>";
                 echo "<th>Job</th>";
