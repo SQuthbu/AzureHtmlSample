@@ -2,7 +2,7 @@
  <head>
  <Title>Registration Form</Title>
 
- <link rel="stylesheet" type="text/css" href="submission/index.css">
+ <link rel="stylesheet" type="text/css" href="AzureHtmlSample/submission/index.css">
 
  </head>
  <body> 
