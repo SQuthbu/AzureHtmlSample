@@ -74,7 +74,8 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
         $blobClient = BlobRestProxy::createBlobService($connectionString);        
             
         $namaFile = $_FILES['berkas']['name'];
-
+        echo $_FILES['berkas']['tmp_name'];
+            
         $createContainerOptions = new CreateContainerOptions();   
         $createContainerOptions->setPublicAccess(PublicAccessType::CONTAINER_AND_BLOBS);
         $createContainerOptions->addMetaData("key1", "value1");
