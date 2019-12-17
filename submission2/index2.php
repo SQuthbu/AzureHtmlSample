@@ -59,7 +59,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
 
 
-    <form  method="post" enctype="multipart/form-data">
+    <form action="" method="post" enctype="multipart/form-data">
         Pilih gambar yang akan di Analisa :
         <br>
         <br>
