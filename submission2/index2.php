@@ -83,8 +83,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
         $terupload = move_uploaded_file($namaSementara, $dirUpload.$namaFile);
 
         if ($terupload) {
-            echo "Upload berhasil!<br/>";
-            echo "Link: <a href='".$dirUpload.$namaFile."'>".$namaFile."</a>";
+            echo "Upload berhasil!<br/>";          
         } else {
             echo "Upload Gagal!";
         }
@@ -115,6 +114,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
             echo "<button onclick='processImage()'>Analyze Image</button>";
             echo "<br><br>";
             echo "<p id='responsePara'></p>";
+            echo "<textarea id='responseTextArea' style='width:580px;'></textarea>";
         }
         catch(ServiceException $e){
             $code = $e->getCode();
@@ -126,9 +126,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
     }
         
     ?>     
-    <textarea id="responseTextArea"></textarea>
-   
-      
+     
  
   
 </body> 
