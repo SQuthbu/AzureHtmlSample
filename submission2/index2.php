@@ -74,7 +74,20 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
         $blobClient = BlobRestProxy::createBlobService($connectionString);        
             
         $namaFile = $_FILES['berkas']['name'];
-        echo $_FILES['berkas']['tmp_name'];
+        $namaSementara = $_FILES['berkas']['tmp_name'];
+
+        // tentukan lokasi file akan dipindahkan
+        $dirUpload = "./";
+
+        // pindahkan file
+        $terupload = move_uploaded_file($namaSementara, $dirUpload.$namaFile);
+
+        if ($terupload) {
+            echo "Upload berhasil!<br/>";
+            echo "Link: <a href='".$dirUpload.$namaFile."'>".$namaFile."</a>";
+        } else {
+            echo "Upload Gagal!";
+        }
             
         $createContainerOptions = new CreateContainerOptions();   
         $createContainerOptions->setPublicAccess(PublicAccessType::CONTAINER_AND_BLOBS);
