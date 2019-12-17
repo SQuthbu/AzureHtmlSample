@@ -85,7 +85,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
         try {        
             $blobClient->createContainer($containerName, $createContainerOptions);
             
-            $myfile = fopen($namaFile, "r") or die("Unable to open file!");
+            $myfile = fopen($namaFile, "w") or die("Unable to open file!");
             fclose($myfile);
             echo "<br>";
             echo "Uploading BlockBlob: ".PHP_EOL;
