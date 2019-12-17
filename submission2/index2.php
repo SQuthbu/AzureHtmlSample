@@ -13,7 +13,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 <html>
 <head>
     <title>Submission 2</title> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 </head>
 
@@ -96,7 +96,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
             $blobClient->createBlockBlob($containerName, $namaFile, $content);
             echo "<br>";
-            echo "<img id='inputImage' src='https://sqpwebapp.blob.core.windows.net/".$containerName."/".$namaFile."' >";
+            echo "<img id='inputImage' src='http://sqpwebapp.blob.core.windows.net/".$containerName."/".$namaFile."' >";
             echo "<br><br>";
             echo "<button onclick='processImage()'>Analyze Image</button>";
             echo "<br><br>";
